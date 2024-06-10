@@ -11,3 +11,4 @@ def conectar():
         return conexion
     except mysql.connector.Error as Err:
         return 'Error al registrar usuario'
+#Hola
