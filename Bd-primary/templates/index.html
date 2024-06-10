@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Huellas del Corazon</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.5.5/build/spline-viewer.js"></script>
+ 
+</head>
+<body>
+    <spline-viewer url="https://prod.spline.design/TUKZhISA3hL1WSjF/scene.splinecode"></spline-viewer>
+    <div class="container_1" id="loginContainer">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" method="POST" action="/login">
+            <input type="text" id="loginUsername" name="username" placeholder="Nombre de usuario" required>
+            <input type="password" id="loginKeypass" name="keypass" placeholder="Contraseña" required>
+            <button class="is" type="submit" >Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes una cuenta? <span class="toggle" onclick="toggleForms()">Regístrate</span></p>
+    </div>
+
+    <div class="container_2" id="registerContainer" style="display: none;">
+        <h2>Registrarse</h2>
+        <form id="registerForm" method="POST" action="/registrar">
+            <input type="text" id="registerUsername" name="username" placeholder="Nombre de usuario" required>
+            <input type="email" id="registerEmail" name="email" placeholder="Correo electrónico" required>
+            <input type="password" id="registerKeypass" name="keypass" placeholder="Contraseña" required>
+            <button type="submit" class="rg">Registrarse</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <span class="toggle" onclick="toggleForms()">Inicia Sesión</span></p>
+    </div>
+
+    <script>
+        function toggleForms() {
+            var loginContainer = document.getElementById('loginContainer');
+            var registerContainer = document.getElementById('registerContainer');
+            if (loginContainer.style.display === 'none') {
+                loginContainer.style.display = 'block';
+                registerContainer.style.display = 'none';
+            } else {
+                loginContainer.style.display = 'none';
+                registerContainer.style.display = 'block';
+            }
+        }
+    </script>
+      
+</body>
+</html>

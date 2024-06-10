@@ -1,0 +1,152 @@
+section {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+  
+  
+}
+
+
+
+
+/* Definición del esquema de colores 'casal' */
+:root {
+  --casal-50: #eefdfd;
+  --casal-100: #d3f8fa;
+  --casal-200: #adf0f4;
+  --casal-300: #75e3eb;
+  --casal-400: #35ccdb;
+  --casal-500: #19afc1;
+  --casal-600: #188da2;
+  --casal-700: #1a7184;
+  --casal-800: #1f6070;
+  --casal-900: #1d4e5c;
+  --casal-950: #0e333e;
+}
+
+/* Estilos para el cuerpo de la página */
+/* Definición del esquema de colores 'casal' */
+:root {
+  --casal-50: #eefdfd;
+  --casal-100: #d3f8fa;
+  --casal-200: #adf0f4;
+  --casal-300: #75e3eb;
+  --casal-400: #35ccdb;
+  --casal-500: #19afc1;
+  --casal-600: #188da2;
+  --casal-700: #1a7184;
+  --casal-800: #1f6070;
+  --casal-900: #1d4e5c;
+  --casal-950: #0e333e;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  
+  /* Gradiente utilizando los colores del esquema 'casal' */
+  background: linear-gradient(45deg, 
+    var(--casal-50), 
+    var(--casal-100), 
+    var(--casal-200), 
+    var(--casal-300), 
+    var(--casal-400), 
+    var(--casal-500), 
+    var(--casal-600), 
+    var(--casal-700), 
+    var(--casal-800), 
+    var(--casal-900), 
+    var(--casal-950)
+  );
+  background-size: 100vw 100vh; /* Tamaño del gradiente */
+  color: var(--casal-900); /* Color de texto */
+  
+}
+spline-viewer {
+  position: fixed;
+  top: 0;
+  left: -35%;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el spline-viewer detrás de los demás elementos */
+}
+
+
+.container_1 {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5); /* Color blanco con una opacidad del 50% */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  
+
+  
+
+}
+.container_2 {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(45deg, 
+  var(--casal-50), 
+  var(--casal-100), 
+  var(--casal-200), 
+  var(--casal-300), 
+  var(--casal-400), 
+ );
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+  margin-top: 10%;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 32px;
+  
+}
+.is{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
