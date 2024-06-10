@@ -1,14 +1,3 @@
-section {
-  width: 500px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
-  
-  
-}
-
-
-
-
 /* Definición del esquema de colores 'casal' */
 :root {
   --casal-50: #eefdfd;
@@ -65,8 +54,7 @@ spline-viewer {
   position: fixed;
   top: 0;
   left: -35%;
-  width: 100%;
-  height: 100%;
+
   z-index: -1; /* Coloca el spline-viewer detrás de los demás elementos */
 }
 
